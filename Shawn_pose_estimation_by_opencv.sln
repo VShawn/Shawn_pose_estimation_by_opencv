@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "include", "include", "{178212C4-0D92-443B-8CE3-3CDE15B108CC}"
+	ProjectSection(SolutionItems) = preProject
+		include\GetDistanceOf2linesIn3D.h = include\GetDistanceOf2linesIn3D.h
+		include\PNPSolver.cpp = include\PNPSolver.cpp
+		include\PNPSolver.h = include\PNPSolver.h
+		include\说明.txt = include\说明.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "相机位姿估计1：根据四个特征点估计相机姿态", "相机位姿估计1：根据四个特征点估计相机姿态\相机位姿估计1：根据四个特征点估计相机姿态.vcxproj", "{019FAC85-F931-4433-85FD-80E403C15780}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "用LabView重建相机位置", "用LabView重建相机位置", "{333A2010-2B7B-4EED-A1ED-57D70213BF3C}"
+	ProjectSection(SolutionItems) = preProject
+		用LabView重建相机位置\cameraFrame.vi = 用LabView重建相机位置\cameraFrame.vi
+		用LabView重建相机位置\dataReader.vi = 用LabView重建相机位置\dataReader.vi
+		用LabView重建相机位置\worldFrame.vi = 用LabView重建相机位置\worldFrame.vi
+		用LabView重建相机位置\世界-手动调整参数设置相机位姿.vi = 用LabView重建相机位置\世界-手动调整参数设置相机位姿.vi
+		用LabView重建相机位置\世界-自动读取D盘根目录txt中的数据设置相机位姿.vi = 用LabView重建相机位置\世界-自动读取D盘根目录txt中的数据设置相机位姿.vi
+		用LabView重建相机位置\说明.txt = 用LabView重建相机位置\说明.txt
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "相机位姿估计3：根据两幅图像的位姿估计结果求某点的世界坐标", "相机位姿估计3：根据两幅图像的位姿估计结果求某点的世界坐标\相机位姿估计3：根据两幅图像的位姿估计结果求某点的世界坐标.vcxproj", "{BEB8E70A-A816-49CD-8288-1E3BE751C6D6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "相机位姿估计2：[应用]实时位姿估计与三维重建相机姿态", "相机位姿估计2：[应用]实时位姿估计与三维重建相机姿态\相机位姿估计2：[应用]实时位姿估计与三维重建相机姿态.vcxproj", "{21107F61-180F-4C50-8295-90648021AB28}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "相机位姿估计1_1：PNP类测试", "相机位姿估计1_1：solvePnP二次封装与性能测试\相机位姿估计1_1：solvePnP二次封装与性能测试.vcxproj", "{A6169DF3-8B34-4AC5-94EA-905BDCF700F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019FAC85-F931-4433-85FD-80E403C15780}.Debug|Win32.ActiveCfg = Debug|Win32
+		{019FAC85-F931-4433-85FD-80E403C15780}.Debug|Win32.Build.0 = Debug|Win32
+		{019FAC85-F931-4433-85FD-80E403C15780}.Release|Win32.ActiveCfg = Release|Win32
+		{019FAC85-F931-4433-85FD-80E403C15780}.Release|Win32.Build.0 = Release|Win32
+		{BEB8E70A-A816-49CD-8288-1E3BE751C6D6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BEB8E70A-A816-49CD-8288-1E3BE751C6D6}.Debug|Win32.Build.0 = Debug|Win32
+		{BEB8E70A-A816-49CD-8288-1E3BE751C6D6}.Release|Win32.ActiveCfg = Release|Win32
+		{BEB8E70A-A816-49CD-8288-1E3BE751C6D6}.Release|Win32.Build.0 = Release|Win32
+		{21107F61-180F-4C50-8295-90648021AB28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21107F61-180F-4C50-8295-90648021AB28}.Debug|Win32.Build.0 = Debug|Win32
+		{21107F61-180F-4C50-8295-90648021AB28}.Release|Win32.ActiveCfg = Release|Win32
+		{21107F61-180F-4C50-8295-90648021AB28}.Release|Win32.Build.0 = Release|Win32
+		{A6169DF3-8B34-4AC5-94EA-905BDCF700F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A6169DF3-8B34-4AC5-94EA-905BDCF700F2}.Debug|Win32.Build.0 = Debug|Win32
+		{A6169DF3-8B34-4AC5-94EA-905BDCF700F2}.Release|Win32.ActiveCfg = Release|Win32
+		{A6169DF3-8B34-4AC5-94EA-905BDCF700F2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+@Author：VShawn
+@URL：http://www.cnblogs.com/singlex/
+@Description：
+
+本文件夹存储的是相机驱动程序
+我使用的是迈德威视的130wUsb工业相机，型号是U130M，对应封装好的API存在“MindVisionCAM”文件夹内
+若你所用的相机与我的不同，记得将你相机的API放到本文件夹中，并修改程序中对应的相机调用部分。

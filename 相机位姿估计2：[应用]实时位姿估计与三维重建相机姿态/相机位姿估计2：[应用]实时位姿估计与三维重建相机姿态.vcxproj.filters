@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="camera\MindVisionCAM\MindVisionCAM.h">
+      <Filter>camera\MindVisionCAM</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\MindVisionCAM\Include\CameraApi.h">
+      <Filter>camera\MindVisionCAM\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\MindVisionCAM\Include\CameraApiLoad.h">
+      <Filter>camera\MindVisionCAM\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\MindVisionCAM\Include\CameraDefine.H">
+      <Filter>camera\MindVisionCAM\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="camera\MindVisionCAM\Include\CameraStatus.h">
+      <Filter>camera\MindVisionCAM\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PNPSolver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main2.cpp" />
+    <ClCompile Include="camera\MindVisionCAM\MindVisionCAM.cpp">
+      <Filter>camera\MindVisionCAM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\PNPSolver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="camera">
+      <UniqueIdentifier>{6237c507-50a1-4866-9044-b065bf5ad53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camera\MindVisionCAM">
+      <UniqueIdentifier>{d6f03289-e119-40e1-8cb9-148c5f799d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="camera\MindVisionCAM\Include">
+      <UniqueIdentifier>{278bf486-b42d-498b-8368-cda1be6036e2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="camera\MindVisionCAM\Include\MVCAMSDK.lib">
+      <Filter>camera\MindVisionCAM\Include</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="camera\说明.txt">
+      <Filter>camera</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+@Author：VShawn
+@URL：http://www.cnblogs.com/singlex/
+@Description：
+
+本文件夹存储的是labview源码
+1.
+	打开“世界-自动读取D盘根目录txt中的数据设置相机位姿”可以实现自动读取D盘根目录下的pnp_t.txt与pnp_theta.txt，
+然后根据其中的位姿数据，对相机当前的空间状态进行三维重建。
+
+2.
+	“世界-手动调整参数设置相机位姿.vi”则可以手动调整位姿参数，主要用于手动验证计算出来的位姿结果是否正确。
