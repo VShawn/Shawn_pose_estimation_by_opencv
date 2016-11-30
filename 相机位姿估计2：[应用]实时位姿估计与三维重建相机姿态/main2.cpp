@@ -149,8 +149,26 @@ int main()
 		cv::namedWindow("CamPos", 0);
 		cvSetMouseCallback("CamPos", on_mouse, NULL);//绑定鼠标点击事件，通过鼠标点击添加追踪点。
 
+		//相机内参数
+		double fx = 1196.98;
+		double fy = 1194.61;
+		double u0 = 634.075;
+		double v0 = 504.842;
+		//镜头畸变参数
+		double k1 = -0.475732;
+		double k2 = 0.405008;
+		double p1 = 0.00196334;
+		double p2 = -0.00201087;
+		double k3 = -0.337634;
+
 		//初始化位姿估计类
 		PNPSolver p4psolver;
+
+		//初始化相机参数
+		p4psolver.SetCameraMatrix(fx, fy, u0, v0);
+		//设置畸变参数
+		p4psolver.SetDistortionCoefficients(k1, k2, p1, p2, k3);
+		
 		//将特征点的世界坐标添加进去
 		p4psolver.Points3D.push_back(cv::Point3f(0, 0, 0));		//P1三维坐标的单位是毫米
 		p4psolver.Points3D.push_back(cv::Point3f(0, 200, 0));	//P2
