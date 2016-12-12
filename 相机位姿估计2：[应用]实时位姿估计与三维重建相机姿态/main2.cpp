@@ -5,6 +5,17 @@
 #include "..\include\PNPSolver.h"
 using namespace std;
 
+
+//本程序将展示一个实时相机位姿估计的例程，其中的原理在前文中已经说过了，利用《相机位姿估计1_1：OpenCV、solvePnP二次封装与性能测试》中构建的类
+//使得程序处理更加简单。本例程利用HSV空间，跟踪红色的特征点，将跟踪到的特征点用于解PNP问题，得到相机位姿（相机的世界坐标与相机的三个旋转角）。
+//最后使用labview中的三维图片控件，对整个系统进行3D重建。
+
+//@author:VShawn(singlex@foxmail.com)
+//说明文章地址：http://www.cnblogs.com/singlex/p/pose_estimation_2.html
+
+
+
+
 vector<cv::Point2f> lastCenters;//记录上一轮特征点的像素坐标
 
 //窗口的鼠标点击事件
